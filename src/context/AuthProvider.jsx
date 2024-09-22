@@ -41,7 +41,7 @@ const AuthProvider = ({ children }) => {
         password
       );
       await updateProfile(auth.currentUser, {
-        displayName,
+        displayName, //objelerde key ve value aynıysa bu şeilde yazılabilir
         // displayName: displayName
       });
       navigate("/");
